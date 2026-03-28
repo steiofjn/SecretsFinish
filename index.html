@@ -87,10 +87,19 @@ button:hover {
   background: #0099cc;
 }
 
+/* UPDATED GALLERY STYLES */
 .gallery img, .gallery video {
   width: 250px;
   border-radius: 10px;
   margin: 10px;
+  transition: 0.3s;
+}
+
+/* Hover effect added */
+.gallery img:hover,
+.gallery video:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 25px rgba(0,200,255,0.35);
 }
 
 .disclaimer {
@@ -125,33 +134,20 @@ button:hover {
   <h2>See My Work</h2>
   <div class="gallery">
 
-    <!-- Uploaded Image 1 -->
     <img src="warning-system.png" alt="Warning System">
-
-    <!-- Uploaded Image 2 -->
     <img src="strike-system.png" alt="Strike System">
-
-  <!-- IMAGE 3 -->
     <img src="promotion-system.png" alt="Promotion System">
-    
-<!-- IMAGE 4 -->
     <img src="sessionend-system.png" alt="SSD System">
-
-    <!-- IMAGE 5 -->
     <img src="start-system.png" alt="SSU System">
-
-    <!-- IMAGE 6 -->
     <img src="demotion-system.png" alt="Demotion System">
     
-   <!-- VIDEO 1 -->
     <video controls>
-  <source src="ticket-video.mp4" type="video/mp4">
-</video>
+      <source src="ticket-video.mp4" type="video/mp4">
+    </video>
 
-<!-- VIDEO 2 -->
     <video controls>
-  <source src="cmds.mp4" type="video/mp4">
-</video>
+      <source src="cmds.mp4" type="video/mp4">
+    </video>
     
   </div>
 </div>
